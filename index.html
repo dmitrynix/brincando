@@ -70,107 +70,7 @@
         </style>
 
 
-       <!-- <script>
 
-
-         $(function() {
-          $( "#draggable_A, #draggable_B, #draggable_C, #draggable_D, #draggable_E, #draggable_F, #draggable_G, #draggable_H, #draggable_I, #draggable_J, #draggable_K, #draggable_L, #draggable_M, #draggable_N, #draggable_O, #draggable_P, #draggable_Q, #draggable_R, #draggable_S, #draggable_T, #draggable_U, #draggable_V, #draggable_W, #draggable_X, #draggable_Y, #draggable_Z, #draggable-nonvalid" ).draggable(
-            {helper: "clone"});
-
-
-
-
-
-          $( "#droppable_D0" ).droppable({
-           accept: "#draggable_D",
-           hoverClass: "ui-state-active",
-           drop: function( event, ui ) {
-            $( this )
-
-            .addClass( "ui-state-highlight" )
-            .find( "p" )
-            .html("<img src=alfabeto/AlfaD.jpg width=50px />" )
-            .find("campos")
-            $('div#campos').append("")
-
-
-
-
-
-          }
-        });
-
-
-
-
-          $( "#droppable_A1" ).droppable({
-           accept: "#draggable_A",
-           hoverClass: "ui-state-active",
-           drop: function( event, ui ) {
-            $( this )
-
-            .addClass( "ui-state-highlight" )
-            .find( "p" )
-            .html("<img src=alfabeto/AlfaA.jpg width=50px />" )
-            .find("campos")
-            $('div#campos').append("")
-
-
-
-
-
-          }
-        });
-
-
-
-
-          $( "#droppable_V2" ).droppable({
-           accept: "#draggable_V",
-           hoverClass: "ui-state-active",
-           drop: function( event, ui ) {
-            $( this )
-
-            .addClass( "ui-state-highlight" )
-            .find( "p" )
-            .html("<img src=alfabeto/AlfaV.jpg width=50px />" )
-            .find("campos")
-            $('div#campos').append("")
-
-
-
-
-
-          }
-        });
-
-
-
-
-          $( "#droppable_I3" ).droppable({
-           accept: "#draggable_I",
-           hoverClass: "ui-state-active",
-           drop: function( event, ui ) {
-            $( this )
-
-            .addClass( "ui-state-highlight" )
-            .find( "p" )
-            .html("<img src=alfabeto/AlfaI.jpg width=50px />" )
-            .find("campos")
-            $('div#campos').append("<a href=jogo.php?x=1200&grupo=4&dificuldade=&Jogar=Jogar><div id=finalizar></div><div id=conteudo><p style=float:left; width:300px;>PARABENS!<BR /><BR />VOC&Ecirc; ACERTOU!</p><img src=imagens/fotos/4-DAVI.jpg width=350px height=270px style=float:right;/></div></a>")
-
-
-
-
-
-          }
-        });
-
-
-
-
-        });
-      </script> !-->
   </head>
   <body>
 
@@ -338,7 +238,20 @@
       var data = ev.dataTransfer.getData("Text");
       ev.target.appendChild(document.getElementById(data).cloneNode(true));
       ev.preventDefault();
+      validate();
       return false;
+    }
+
+    function validate(){
+      var value_1 = $(document.getElementById('droppable_1').childNodes[1]).attr('id');
+      var value_2 = $(document.getElementById('droppable_2').childNodes[1]).attr('id');
+      var value_3 = $(document.getElementById('droppable_3').childNodes[1]).attr('id');
+      var value_4 = $(document.getElementById('droppable_4').childNodes[1]).attr('id');
+
+      if (value_1 == 'draggable_D' && value_2 == 'draggable_A' && value_3 == 'draggable_V' && value_4 == 'draggable_I') {
+
+        $('div#campos').append("<a href=jogo.php?x=1200&grupo=4&dificuldade=&Jogar=Jogar><div id=finalizar></div><div id=conteudo><p style=float:left; width:300px;>PARABENS!<BR /><BR />VOC&Ecirc; ACERTOU!</p><img src=imagens/fotos/4-DAVI.jpg width=350px height=270px style=float:right;/></div></a>");
+      }
     }
   </script>
 
