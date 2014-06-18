@@ -1,24 +1,12 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-  	<meta charset="utf-8">
-  	<title>Brincando com meu Nome</title>
-    <script src="http://code.jquery.com/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.8.17/jquery-ui.min.js"></script>
-
-    <link rel="stylesheet" href="themes/base/jquery.ui.all.css">
-    <script src="jquery-1.4.4.js"></script>
-    <script src="ui/jquery.ui.core.js"></script>
-    <script src="ui/jquery.ui.widget.js"></script>
-  <!--  <script src="ui/jquery.ui.mouse.js"></script>
-    <script src="ui/jquery.ui.draggable.js"></script>
-    <script src="ui/jquery.ui.droppable.js"></script>
-    <script src="js/jquery.ui.touch-punch.js"></script> -->
-
-    <link rel="stylesheet" href="css/demos.css">
-    <style>
-
+<head>
+  <meta charset="UTF-8">
+  <title>Brincando com meu Nome</title>
+  <link rel='stylesheet' href='themes/base/jquery.ui.all.css'>
+  <script src='jquery-1.4.4.js'></script>
+  <link rel='stylesheet' href='css/demos.css'>
+  <style>
       body{margin:0px auto;  text-align:center; padding:0px; background-image:url(alfabeto/fundo.jpg);}
 
       .droppable { width: 75px; height:60px; padding: 1px; float: left; margin: 2px; text-align:center; }
@@ -67,192 +55,92 @@
           .movable {
             cursor: move;
           }
-        </style>
-
-
-
-  </head>
-  <body>
-
-  	<h1>Monte o nome DAVI</h1>
-
-    <div class="demo">
-    <section id="section"  ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">
-     <div id="alfabeto">
-      <div class="ui-widget-content movable draggable">
-       <img id="draggable_A" src="alfabeto/AlfaA.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true" />
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_B" src="alfabeto/AlfaB.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_C" src="alfabeto/AlfaC.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_D" src="alfabeto/AlfaD.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_E" src="alfabeto/AlfaE.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_F" src="alfabeto/AlfaF.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_G" src="alfabeto/AlfaG.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_H" src="alfabeto/AlfaH.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_I" src="alfabeto/AlfaI.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_J" src="alfabeto/AlfaJ.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_K" src="alfabeto/AlfaK.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_L" src="alfabeto/AlfaL.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_M" src="alfabeto/AlfaM.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_N" src="alfabeto/AlfaN.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_O" src="alfabeto/AlfaO.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_P" src="alfabeto/AlfaP.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_Q" src="alfabeto/AlfaQ.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_R" src="alfabeto/AlfaR.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_S" src="alfabeto/AlfaS.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_T" src="alfabeto/AlfaT.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_U" src="alfabeto/AlfaU.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_V" src="alfabeto/AlfaV.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_W" src="alfabeto/AlfaW.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_X" src="alfabeto/AlfaX.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_Y" src="alfabeto/AlfaY.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-     <div class="ui-widget-content movable draggable">
-       <img id="draggable_Z" src="alfabeto/AlfaZ.jpg" height="65px" ondragstart="return dragStart(event)" draggable="true"/>
-     </div>
-
-   </div>
-   </section>
-
-
-   <div id="campos">
-
-    <div id="letras" style="clear:both;">
-
-      <div id="droppable_1" class="ui-widget-header droppable" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">
-
-      </div>
-
-      <div id="droppable_2" class="ui-widget-header droppable" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">
-
-      </div>
-
-      <div id="droppable_3" class="ui-widget-header droppable" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">
-
-      </div>
-
-      <div id="droppable_4" class="ui-widget-header droppable" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">
-
-      </div>
-
+  </style>
+</head>
+<body>
+  <div class='demo'>
+    <h1>Monte o nome DAVI</h1>
+    <div id='alfabeto' ondragenter='return preventDefault(event)' ondrop='return dragDropRemove(event)'
+          ondragover='return preventDefault(event)'>
     </div>
 
+    <div id='campos' style='clear:both;'>
+    </div>
   </div>
 
-  </div><!-- End demo -->
+  <script type='text/javascript'>
+    $(document).ready(function(){
+        putAlphabet();
+        putDroppable();
+        })
 
+    function putAlphabet(){
+      var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
+          'V', 'W', 'X', 'Y', 'Z']
+      alphabet.forEach(function(alpha){
+        var id = 'draggable_' + alpha;
+        var src = 'alfabeto/Alfa' + alpha + '.jpg';
+        var image = "<img id='" + id + "' src='" + src + "' height='65px' width='75px' draggable='true' ondragstart='return dragStart(event)'>"
+        $('div#alfabeto').append(image);
+          });
+    }
 
+    function putDroppable(){
+      var qtty = 3;
+      for (var i = 0; i <= qtty; i++){
+        var div = "<div id='droppable_" + i + "' class='ui-widget-header droppable' ondragenter='return preventDefault(event)' ondrop='return dragDrop(event)' ondragover='return preventDefault(event)'> </div>"
+        $('div#campos').append(div);
+      }
+    }
 
-
-  </body>
-
-
-  <script type="text/javascript">
-    function dragStart(ev) {
-      ev.dataTransfer.effectAllowed='copyMove';
-      ev.dataTransfer.setData("Text", ev.target.id);
+    function dragStart(ev){
+      ev.dataTransfer.effectAllowed='copy';
+      ev.dataTransfer.setData('Text', ev.target.id);
       return true;
     }
 
-    function dragEnter(ev) {
+    function preventDefault(ev){
       ev.preventDefault();
       return true;
     }
-    function dragOver(ev) {
-      ev.preventDefault();
-      return true;
-    }
-    function dragDrop(ev) {
-      var data = ev.dataTransfer.getData("Text");
-      ev.target.appendChild(document.getElementById(data).cloneNode(true));
+
+    function dragDrop(ev){
+      var data = ev.dataTransfer.getData('Text');
+      var elemento = document.getElementById(data);
+      ev.target.appendChild(elemento.cloneNode(true));
+      elemento.removeAttribute('id');
+      elemento.setAttribute('id', data + '_1');
       ev.preventDefault();
       validate();
       return false;
     }
 
+    function dragDropRemove(ev){
+      var data = ev.dataTransfer.getData('Text');
+      ev.target.appendChild(document.getElementById(data));
+      ev.target.removeChild(document.getElementById(data));
+      ev.preventDefault();
+      return false;
+    }
+
     function validate(){
-      var value_1 = $(document.getElementById('droppable_1').childNodes[1]).attr('id');
-      var value_2 = $(document.getElementById('droppable_2').childNodes[1]).attr('id');
-      var value_3 = $(document.getElementById('droppable_3').childNodes[1]).attr('id');
-      var value_4 = $(document.getElementById('droppable_4').childNodes[1]).attr('id');
-
-      if (value_1 == 'draggable_D' && value_2 == 'draggable_A' && value_3 == 'draggable_V' && value_4 == 'draggable_I') {
-
-        $('div#campos').append("<a href=jogo.php?x=1200&grupo=4&dificuldade=&Jogar=Jogar><div id=finalizar></div><div id=conteudo><p style=float:left; width:300px;>PARABENS!<BR /><BR />VOC&Ecirc; ACERTOU!</p><img src=imagens/fotos/4-DAVI.jpg width=350px height=270px style=float:right;/></div></a>");
+      var guessWord = "DAVI";
+      var control = false;
+      for (var i = 0 ; i < guessWord.length; i++){
+        var droppable = "droppable_" + i;
+        var guessed = $(document.getElementById(droppable).childNodes[1]).attr('id');
+        console.log(guessed);
+        var correct = "draggable_" + guessWord.charAt(i);
+        if (guessed == correct){
+          control = true;
+          } else {
+          control = false;
+          }
+      }
+      if (control) {
+        $('div#campos').append("<p style=float:left; width:300px;>PARABENS!<BR /><BR />VOC&Ecirc; ACERTOU!</p><img src=imagens/fotos/4-DAVI.jpg width=350px height=270px style=float:right;/>");
       }
     }
   </script>
-
+</body>
 </html>
