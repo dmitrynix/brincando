@@ -126,18 +126,16 @@
     function validate(){
       var guessWord = "DAVI";
       var control = false;
+      var guessed = '';
       for (var i = 0 ; i < guessWord.length; i++){
-        var droppable = "droppable_" + i;
-        var guessed = $(document.getElementById(droppable).childNodes[1]).attr('id');
-        console.log(guessed);
-        var correct = "draggable_" + guessWord.charAt(i);
-        if (guessed == correct){
-          control = true;
-          } else {
-          control = false;
-          }
+       var droppable = "droppable_" + i;
+      var elemento = document.getElementById(droppable).childNodes[1];
+      if (!elemento){
+      }else {
+        guessed += $(elemento).attr('id').slice(-1);
       }
-      if (control) {
+     }
+      if (guessed == guessWord) {
         $('div#campos').append("<p style=float:left; width:300px;>PARABENS!<BR /><BR />VOC&Ecirc; ACERTOU!</p><img src=imagens/fotos/4-DAVI.jpg width=350px height=270px style=float:right;/>");
       }
     }
