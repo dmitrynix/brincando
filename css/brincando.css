@@ -1,0 +1,185 @@
+body {
+  margin:0px auto;
+  text-align:center;
+  padding:0px;
+  background-image:url(../alfabeto/fundo.jpg);
+}
+
+.droppable {
+  width: 75px;
+  height:60px;
+  padding: 1px;
+  float: left;
+  margin: 2px;
+  text-align:center;
+}
+
+.droppable img {
+  height:55px;
+}
+
+.draggable {
+  width: 75px;
+  height:65px;
+  padding: 0.5em;
+  float: left;
+  margin: 2px;
+}
+
+img {
+  border:none;
+}
+
+a {
+  text-decoration:none;
+}
+
+#alfabeto {
+  width:100%;
+  clear:both;
+  height:200px;
+  margin:0px;
+}
+.demo {
+  padding:0px;
+  margin:0px auto;
+  clear:both;
+  text-align:center;
+}
+
+#campos {
+  margin-top:50px;
+  text-align:center;
+  margin:0px auto;
+}
+
+#letras {
+  margin-top:30px;
+  margin-right:20px;
+  text-align:center;
+}
+
+#finalizar {
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0px;
+  left:0px;
+  opacity:0.4;
+  filter:alpha(opacity=40);
+  background-color:#000;
+}
+
+#finalizar p {
+  font-size:25px;
+  text-align:center;
+  color:red;
+}
+
+#finalizar img {
+  padding:20px;
+}
+
+#conteudo {
+  background-color:#fff;
+  width:720px;
+  left:-375px;
+  margin-left:50%;
+  height:300px;
+  position:absolute;
+  top:50px;
+  z-index:1;
+  border: 15px solid #fff;
+}
+
+#menu {
+  padding:0px;
+  margin:0px auto;
+  width:100%;
+  clear:both;
+}
+
+#menu a {
+  font-size:18px;
+  color:#fff;
+  text-decoration:none;
+}
+
+#menu a:hover {
+  color:#ccc;
+}
+
+#lista{
+  width:770x;
+  position:absolute;
+  margin-left:-365px;
+  left:50%;
+  text-align:center;
+  min-height:470px;
+  margin-top:20px;
+}
+
+ul {
+  width:320px;
+  list-style-type:none;
+  border: 2px solid blue;
+  padding:20px;
+  background-color:blue;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+}
+ul li a {
+  color:#ffffff;
+  text-align:left;
+  text-decoration:none;
+  font-size:20px;
+  font-family:arial;
+}
+
+ul li a:hover {
+  color:red;
+}
+
+#topo {
+  width:100%;
+  height:60px;
+  background-color:#FF9900;
+  text-align:center;
+  padding-top:20px;
+}
+
+#rodape {
+  width:100%;
+  background-color:#FF9900;
+  height:50px;
+  clear:both;
+}
+
+p {
+  padding:0px;
+  margin:0px;
+  height:65px;
+}
+
+a #conteudo p {
+  font-size:30px;
+  padding:20px;
+  text-align:center;
+  color:#000;
+  text-decoration:none;
+  width:320px;
+  color:red;
+}
+
+#lista2{
+  font-size:20px;
+}
+
+#lista2 select{
+  font-size:24px;
+}
+
+.movable {
+  cursor: move;
+}
