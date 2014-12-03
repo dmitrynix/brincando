@@ -95,7 +95,7 @@
 
     function dragStart(ev){
       ev.dataTransfer.effectAllowed='copy';
-      ev.dataTransfer.setData('Text', ev.target.id);
+      ev.dataTransfer.setData('SrcId', ev.target.id);
       return true;
     }
 
@@ -105,7 +105,7 @@
     }
 
     function dragDrop(ev){
-      var data = ev.dataTransfer.getData('Text');
+      var data = ev.dataTransfer.getData('SrcId');
       var elemento = document.getElementById(data);
       ev.target.appendChild(elemento.cloneNode(true));
       elemento.removeAttribute('id');
